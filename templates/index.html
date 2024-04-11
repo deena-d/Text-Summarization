@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        textarea {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            color: #000;
+        }
+        
+        input[type="submit"] {
+            background: linear-gradient(to bottom, #000, #fff);
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Summarization</h1>
+
+    <!-- Form for entering an article -->
+    <form method="post">
+        <label for="article">Enter Article:</label><br>
+        <textarea name="article" id="article" rows="10" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Summarize">
+    </form>
+
+    <!-- Display summarized text -->
+    {% if summary %}
+        <h2>Summarized Text:</h2>
+        <p>{{ summary }}</p>
+    {% endif %}
+</body>
+</html>
