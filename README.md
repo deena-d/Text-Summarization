@@ -31,3 +31,10 @@ DEENA D
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+##Demo video 
+
+
+
+https://github.com/deena-d/Text-Summarization/assets/107647091/53c89967-8759-438c-b972-503d0356af52
+
